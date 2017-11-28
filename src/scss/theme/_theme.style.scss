@@ -1,0 +1,155 @@
+/*
+|--------------------------------------------------------------------------
+| #THEME
+|--------------------------------------------------------------------------
+*/
+
+// #LANDING
+// =========================================================================
+
+.landing {
+    width:100vw;
+    height:100vh; //take out once video is back in
+    background:url('../img/hero.jpg');
+    background-size:cover;
+
+    &__container {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+
+        .header {
+            text-align:center;
+            width:50%;
+            display:block;
+
+            @media screen and (max-width:48rem) {
+                width:70%;
+            }
+
+            @media screen and (max-width:32rem) {
+                width:100%;
+            }
+            
+            img {
+                max-width:100%;
+            }
+        }
+
+        .video {
+            width:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin-top:-3rem;
+            margin-bottom:2rem;
+
+            @media screen and (max-width:64rem) {
+                margin-top:-4rem;
+                margin-bottom:0;
+            }
+
+            @media screen and (max-width:48rem) {
+                width:70%;
+            }
+
+            @media screen and (max-width:32rem) {
+                width:100%;
+                margin-top:-3rem;
+                margin-bottom:-1rem;
+            }
+
+            iframe {
+                width:50rem;
+                height:23rem;
+                border:none;
+
+                @media screen and (max-width:32rem) {
+                    height:20rem;
+                }
+
+            }
+        }
+
+        .cta {
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            width:100vw;
+            padding-left:20%;
+            margin-bottom:5rem;
+
+            @media screen and (max-width:32rem) {
+                padding-left:0;
+            }
+
+
+            .content {
+                background-color:rgba(0, 0, 0, .8);
+                width:100%;
+                margin-right:0;
+                padding-right:0;
+
+                h2 {
+                    width:75%;
+                    padding:2rem;
+                    margin-bottom:0;
+                    font-weight:300;
+                    font-size:2rem;
+
+                    @media screen and (max-width:32rem) {
+                        width:100%;
+                    }
+                }
+            }
+
+            form {
+                display:flex;
+                flex-direction:row;
+
+                @media screen and (max-width:32rem) {
+                    flex-direction:column;
+                }
+
+                input {
+                    background-color:white;
+                    width:30rem;
+                    font-size:1.25rem;
+                    border:white;
+                    padding:.75rem;
+
+                    @media screen and (max-width:48rem) {
+                        width:20rem;
+                    }
+
+                    @media screen and (max-width:32rem) {
+                        width:100vw;
+                        padding:1rem;
+                    }
+                }
+
+                button {
+                    width:auto;
+                    background-color:$primary;
+                    padding:.75rem 2rem;
+                    font-size:1rem;
+                    color:white;
+                    text-transform:uppercase;
+                    border-radius:0;
+
+                    @media screen and (max-width:32rem) {
+                        padding:1rem 2rem;
+                    }
+
+                    &:hover {
+                        color:$primary;
+                        background-color:white;
+                        transition:all .2s ease;
+                        border-color:white;
+                    }
+                }
+            }
+        }
+    }
+}
