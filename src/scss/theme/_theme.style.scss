@@ -9,7 +9,6 @@
 
 .landing {
     width:100vw;
-    height:100vh; //take out once video is back in
     background:url('../img/hero.jpg');
     background-size:cover;
 
@@ -116,7 +115,7 @@
                     background-color:white;
                     width:30rem;
                     font-size:1.25rem;
-                    border:white;
+                    border:1px solid $grey-light;
                     padding:.75rem;
 
                     @media screen and (max-width:48rem) {
@@ -137,6 +136,7 @@
                     color:white;
                     text-transform:uppercase;
                     border-radius:0;
+                    border:1px solid $primary;
 
                     @media screen and (max-width:32rem) {
                         padding:1rem 2rem;

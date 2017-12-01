@@ -51,8 +51,7 @@
             </div>
 
             <div class="video container">
-                <!-- video -->
-                <!-- <iframe src="https://player.vimeo.com/video/242308046?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                <iframe src="https://player.vimeo.com/video/245251261" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
 
             <div class="cta">
@@ -62,6 +61,7 @@
 
                 <div class="form-container">
                     <form action="MailController.php" method="post" class="form">
+                        <input type="text" name="name" placeholder="First and Last Name">
                         <input type="email" name="email" placeholder="Enter your email and be notified!">
                         <button class="submit button">Subscribe</button>
                     </form>
