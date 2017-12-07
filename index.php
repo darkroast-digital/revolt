@@ -47,7 +47,7 @@
     <section class="landing">
         <div class="landing__container">
             <div class="header container">
-                <img src="assets/img/logo.png" alt="Revolt - Evolution of Digital Currency">
+                <img src="assets/img/logo.png" class="logo" alt="Revolt - Evolution of Digital Currency">
             </div>
 
             <div class="video container">

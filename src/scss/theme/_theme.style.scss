@@ -9,6 +9,7 @@
 
 .landing {
     width:100vw;
+    min-height:100vh;
     background:url('../img/hero.jpg');
     background-size:cover;
     background-attachment:fixed;
@@ -33,7 +34,12 @@
             }
             
             img {
-                max-width:100%;
+                width:70%; 
+                margin:4rem;
+
+                @media screen and (max-width:32rem) {
+                    margin:1rem 0;
+                }
             }
         }
 
