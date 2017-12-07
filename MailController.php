@@ -15,7 +15,7 @@ function sendToRevolt() {
     # $mg->messages()->send($domain, $params);
     $mg->messages()->send('revoltdigital.ca', [
       'from'    => $email,
-      'to'      => 'kim@darkroast.co',
+      'to'      => 'contact@revoltdigital.ca',
       'subject' => 'New Revolt Subscriber',
       'html'    => $name . " at " . $email . " would like to receive the Revolt presentation on digital currency, e-commerce, and e-learning."
     ]);
