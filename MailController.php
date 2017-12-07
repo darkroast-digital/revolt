@@ -13,7 +13,7 @@ function sendToRevolt() {
     $mg = Mailgun::create('key-1715c074f053673f6e3c4c79e8595390');
     # Now, compose and send your message.
     # $mg->messages()->send($domain, $params);
-    $mg->messages()->send('sandbox54da33a8b2644faebc547af411755bc1.mailgun.org', [
+    $mg->messages()->send('revoltdigital.ca', [
       'from'    => $email,
       'to'      => 'kim@darkroast.co',
       'subject' => 'New Revolt Subscriber',
@@ -30,11 +30,14 @@ function sendToUser() {
     $mg = Mailgun::create('key-1715c074f053673f6e3c4c79e8595390');
     # Now, compose and send your message.
     # $mg->messages()->send($domain, $params);
-    $mg->messages()->send('sandbox54da33a8b2644faebc547af411755bc1.mailgun.org', [
+    $mg->messages()->send('revoltdigital.ca', [
       'from'    => 'contact@revoltdigital.ca',
       'to'      => $email,
       'subject' => 'Thanks for subscribing!',
-      'html'    => "Hey, " . $name . "! Thanks for subscribing!"
+      'html'    => "<p>Thank you for your interest in ReVolt Evolution of Digital Currency.  You will receive follow up emails with details on ReVolt Events in your area.</p>
+        <p>Please find us on Facebook at <a href='https://www.facebook.com/revoltdigitalcurrency/'>https://www.facebook.com/revoltdigitalcurrency/</a> for updates and info on the Digital Currency world.</p>
+        <p>Respectfully,</p>
+        <p>Team ReVolt</p>"
     ]);
 
 }
