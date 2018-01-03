@@ -51,7 +51,7 @@
             </div>
 
             <div class="video container">
-                <iframe src="https://player.vimeo.com/video/246470920" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/249532858" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
 
             <div class="cta">
